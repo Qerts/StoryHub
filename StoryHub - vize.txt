@@ -1,0 +1,15 @@
+StoryHub (pracovní název) bude aplikace, která bude uživateli nabízet povídky na pokraèování, 
+seriály a povídky s možností volby dalšího vývoje. Bude koncipována tak, aby nabízela možnosti
+pro další rozvoj. V základní verzi bude aplikace pouze zobrazovat povídky, které si stáhne ze 
+serveru. Ty budou v aplikaci hierarchicky rozdìleny klasicky do kategorií dle žánrù atd. V první 
+fázi nepoèítám s externími autory. V další fázi bude nutné dodìlat serverovou èást, kterou 
+budou moci používat i laikové pro pøidávání svých pøíbìhù. V této èásti se bude muset øešit 
+finanèní èást, kdy jim z toho poplyne èást ziskù možná pøes paypal nebo tak nìjak. Každopádnì 
+musí být kladen dùraz na rozšiøitelnost. Aplikace bude nabízena ve tøech variantách, implementovaných 
+postupnì: 
+1. reklamní banner
+2. pøedplatné
+3. placená verze
+
+
+
