@@ -6,11 +6,18 @@ fázi nepoèítám s externími autory. V další fázi bude nutné dodìlat serverovou èá
 budou moci používat i laikové pro pøidávání svých pøíbìhù. V této èásti se bude muset øešit 
 finanèní èást, kdy jim z toho poplyne èást ziskù možná pøes paypal nebo tak nìjak. Každopádnì 
 musí být kladen dùraz na rozšiøitelnost. Aplikace bude nabízena ve tøech variantách, implementovaných 
-postupnì: 
+postupnì:
 1. reklamní banner
 2. pøedplatné
 3. placená verze
 
 
 
-tralala
+Platformy:
+- Win10
+- Android 
+- iOS
+- Èteèky
+
+
+
