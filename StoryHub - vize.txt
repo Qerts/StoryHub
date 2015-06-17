@@ -19,5 +19,31 @@ Platformy:
 - iOS
 - Èteèky
 
+1. Fáze - hrubá implementace
+- vytvoøení diagramù
+- vytvoøení návrhù uživatelského rozhraní
+- vytvoøení aplikace schopné zobrazit povídky
+- vytvoøení internetové úložištì pro povídky
+- vytvoøení profilù na sociálních sítích
+- pøidání reklamního panelu
+- propagace!!!
+
+2. Fáze - kvalitní implementace
+- ladìní
+- vyøešení bugù
+- vytvoøení serverové èásti aplikace
+- vytvoøení webu aplikace
+- vytvoøení webové aplikace aplikace
+- vìtší propagace!!!
+- interakce mezi aplikací a serverem
+
+3. Fáze - monetizace
+- doøešení monetizace aplikace jako takové
+- vyøešení distribuce financí jednotlivým autorùm
+- ještì vìtší propagace!!!
+- ladìní
+
+4. Fáze - streamování mluveného slova
+
 
 
