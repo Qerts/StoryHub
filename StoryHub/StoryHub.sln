@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoryHub.WindowsPhone", "St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoryHub.SideCodeProject", "StoryHub.SideCodeProject\StoryHub.SideCodeProject.csproj", "{B1B78508-81AF-4D54-A8B0-55BB706A7C71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoryHub.Library", "StoryHub.Library\StoryHub.Library.csproj", "{3248937A-DD99-4081-8C0D-848CA3749993}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		StoryHub\StoryHub.Shared\StoryHub.Shared.projitems*{cc9ce502-f0ef-4c4e-ad55-ac693a3b1a99}*SharedItemsImports = 4
@@ -84,6 +86,16 @@ Global
 		{B1B78508-81AF-4D54-A8B0-55BB706A7C71}.Release|ARM.ActiveCfg = Release|Any CPU
 		{B1B78508-81AF-4D54-A8B0-55BB706A7C71}.Release|x64.ActiveCfg = Release|Any CPU
 		{B1B78508-81AF-4D54-A8B0-55BB706A7C71}.Release|x86.ActiveCfg = Release|Any CPU
+		{3248937A-DD99-4081-8C0D-848CA3749993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3248937A-DD99-4081-8C0D-848CA3749993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3248937A-DD99-4081-8C0D-848CA3749993}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{3248937A-DD99-4081-8C0D-848CA3749993}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3248937A-DD99-4081-8C0D-848CA3749993}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3248937A-DD99-4081-8C0D-848CA3749993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3248937A-DD99-4081-8C0D-848CA3749993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3248937A-DD99-4081-8C0D-848CA3749993}.Release|ARM.ActiveCfg = Release|Any CPU
+		{3248937A-DD99-4081-8C0D-848CA3749993}.Release|x64.ActiveCfg = Release|Any CPU
+		{3248937A-DD99-4081-8C0D-848CA3749993}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,5 +105,6 @@ Global
 		{EB9E5E88-0D01-4B16-8D73-1B21A67EB198} = {C3D139CA-2933-4FEE-AAEC-A034E45FFD3E}
 		{CC9CE502-F0EF-4C4E-AD55-AC693A3B1A99} = {C3D139CA-2933-4FEE-AAEC-A034E45FFD3E}
 		{B1B78508-81AF-4D54-A8B0-55BB706A7C71} = {C3D139CA-2933-4FEE-AAEC-A034E45FFD3E}
+		{3248937A-DD99-4081-8C0D-848CA3749993} = {C3D139CA-2933-4FEE-AAEC-A034E45FFD3E}
 	EndGlobalSection
 EndGlobal

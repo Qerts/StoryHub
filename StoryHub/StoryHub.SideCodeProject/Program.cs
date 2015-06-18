@@ -10,6 +10,7 @@ namespace StoryHub.SideCodeProject
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
