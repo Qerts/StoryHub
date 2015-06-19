@@ -51,7 +51,9 @@
         		<ColumnDefinition/>
         		<ColumnDefinition Width="3*"/>
         	</Grid.ColumnDefinitions>
-        	<ListView x:Name="GenreListView" Margin="20"/>
+        	<ListView x:Name="GenreListView" Margin="20" SelectionMode="Multiple" >
+                
+            </ListView>
         	<GridView x:Name="StoriesGridView" Grid.Column="1" Margin="20"/>
         </Grid>
     </Grid>

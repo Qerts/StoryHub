@@ -57,10 +57,12 @@ namespace StoryHub
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             this.navigationHelper.SaveState += navigationHelper_SaveState;
 
+            
+            foreach (var value in BLL.ServiceMethods.GetGenres())
+            {
+                GenreListView.Items.Add(value);
+            }
 
-            GenreListView.Items.Add("Horror");
-            GenreListView.Items.Add("Fantasy");
-            GenreListView.Items.Add("Sci-fi");
         }
 
         /// <summary>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -15,5 +15,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)BLL\ServiceMethods.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DAL\Connector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DAL\Model\Article.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DAL\Model\Author.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DAL\Model\Enums.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DAL\Model\Restriction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DAL\Model\Story.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DAL\Parser\Parser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DAL\Parser\ParserXML.cs" />
   </ItemGroup>
 </Project>
