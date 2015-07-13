@@ -25,4 +25,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)DAL\Parser\Parser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DAL\Parser\ParserXML.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)strings\cs-CZ\" />
+    <Folder Include="$(MSBuildThisFileDirectory)strings\en-US\" />
+  </ItemGroup>
 </Project>

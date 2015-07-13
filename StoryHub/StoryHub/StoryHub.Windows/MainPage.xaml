@@ -6,32 +6,29 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    	<Grid.RowDefinitions>
-    		<RowDefinition Height="110*"/>
-    		<RowDefinition Height="73*"/>
-    		<RowDefinition Height="37*"/>
-    		<RowDefinition Height="73*"/>
-    		<RowDefinition Height="37*"/>
-    		<RowDefinition Height="73*"/>
-    		<RowDefinition Height="36*"/>
-    		<RowDefinition Height="73*"/>
-    		<RowDefinition Height="151*"/>
-    		<RowDefinition Height="105*"/>
-    	</Grid.RowDefinitions>
-    	<Grid.ColumnDefinitions>
-    		<ColumnDefinition Width="124*"/>
-    		<ColumnDefinition Width="373*"/>
-    		<ColumnDefinition Width="148*"/>
-    		<ColumnDefinition Width="552*"/>
-    		<ColumnDefinition Width="169*"/>
-    	</Grid.ColumnDefinitions>
-    	<Button x:Name="BtnStories" Content="Stories" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1" VerticalAlignment="Stretch" Background="#FF111111" BorderBrush="#FF333333"/>
-    	<Button x:Name="BtsWantToWrite" Content="I want to write" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Grid.Row="5" Grid.Column="1" Background="#FF111111" BorderBrush="#FF333333"/>
-    	<Button x:Name="BtnAbout" Content="About app" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3" VerticalAlignment="Stretch" Background="#FF111111" BorderBrush="#FF333333"/>
-    	<Button x:Name="BtnSettings" Content="Options" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="7" VerticalAlignment="Stretch" Background="#FF111111" BorderBrush="#FF333333"/>
-    	<Grid Grid.Row="1" Grid.Column="3" Grid.RowSpan="8" Background="#FF111111"/>
-
-    </Grid>
+	<Grid HorizontalAlignment="Left" Height="768" VerticalAlignment="Top" Width="1366" Background="#FF222222">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="4*"/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition Height="5*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="2*"/>
+			<ColumnDefinition Width="3*"/>
+		</Grid.ColumnDefinitions>
+		<TextBox x:Name="TbLogin" TextWrapping="Wrap" Text="TestSubject" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+		<PasswordBox x:Name="TbPsw" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Password="TestPassword"/>
+		<Button x:Name="BtnLogin" Content="Login" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Tapped="BtnLogin_Tapped"/>
+		<Button x:Name="BtnRegister" Content="Register" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Row="7" Grid.Column="1" Tapped="BtnRegister_Tapped"/>
+		<Button x:Name="BtnLostPsw" Content="Forgotten password" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Row="9" Grid.Column="1" Tapped="BtnLostPsw_Tapped"/>
+	</Grid>
 </Page>

@@ -51,6 +51,21 @@ namespace StoryHub
             this.Frame.Navigate(typeof(About));
         }
 
+        private void BtnLogin_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+        	// TODO: Add event handler implementation here.
+        }
+
+        private void BtnRegister_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+        	// TODO: Add event handler implementation here.
+        }
+
+        private void BtnLostPsw_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+        	// TODO: Add event handler implementation here.
+        }
+
 
     }
 }
