@@ -6,6 +6,41 @@ namespace StoryHub.Model
 {
     class Restriction
     {
+        private string name;                //"tupá" proměnná
+
+        public string Name                  //chytrá proměnná
+        {
+            set
+            {
+                name = value;               //uložená vstupní hodnota chytré proměnné do name
+            }
+            get
+            {
+                return name;                //vrací hodnotu privátní proměnné
+            }
+        }
+
+        private string  description;
+
+        public string Description
+        {
+            set
+            {
+                description = value;
+            }
+            get
+            {
+                return description;
+            }
+        }
+
+
+
+
+
+
+
+
         private int i;              //proměnná je dána předpisem [přístupové právo][datový typ][název proměnné], je to ukazatel na místo v paměti
                                     //do tohoto místa my potom můžeme umístit nějaká data, která odpovídají danému datovému typu
                                     //když programu dáme proměnnou, kterou má vypsat, dáme mu tak ukazatel na místo v paměti, jehož obsah má pro výpis použít

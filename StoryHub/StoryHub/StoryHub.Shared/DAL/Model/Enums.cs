@@ -15,8 +15,13 @@ namespace StoryHub.Model
         fantasy,
         horror,
         scifi,
-        romantic        
+        romantic,
     }
 
+    public enum Type
+    {
+
+
+    }
     
 }
