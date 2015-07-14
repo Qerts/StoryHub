@@ -6,7 +6,7 @@ namespace StoryHub.Model
 {
     class Restriction
     {
-        private string name;                //"tupá" proměnná
+        private string name=string.Empty;                //"tupá" proměnná
 
         public string Name                  //chytrá proměnná
         {
@@ -20,7 +20,7 @@ namespace StoryHub.Model
             }
         }
 
-        private string  description;
+        private string  description=string.Empty;
 
         public string Description
         {
