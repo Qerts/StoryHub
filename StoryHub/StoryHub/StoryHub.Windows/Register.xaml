@@ -9,9 +9,11 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     	<Grid.ColumnDefinitions>
-    		<ColumnDefinition/>
-    		<ColumnDefinition Width="53*"/>
-    		<ColumnDefinition/>
+    		<ColumnDefinition Width="25*"/>
+    		<ColumnDefinition Width="167*"/>
+    		<ColumnDefinition Width="182*"/>
+    		<ColumnDefinition Width="967*"/>
+    		<ColumnDefinition Width="25*"/>
     	</Grid.ColumnDefinitions>
     	<Grid.RowDefinitions>
     		<RowDefinition Height="3*"/>
@@ -30,13 +32,18 @@
     		<RowDefinition Height="15*"/>
     		<RowDefinition/>
     	</Grid.RowDefinitions>
-    	<TextBlock x:Name="TbLogin" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1"/>
-    	<TextBlock x:Name="TbPassword" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.Row="3" Grid.Column="1"/>
-    	<TextBlock x:Name="TbPasswordRepeat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.Row="5" Grid.Column="1"/>
-    	<AppBarButton x:Name="BtnBack" HorizontalAlignment="Right" Icon="Back" Label="AppBarButton" VerticalAlignment="Bottom" Grid.Row="13" Grid.Column="1" Tapped="BtnBack_Tapped"/>
-    	<Button x:Name="BtnRegister" Content="Register" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="11" Grid.Column="1" Tapped="BtnRegister_Tapped"/>
-    	<CheckBox x:Name="CkbTerms" Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="7" Grid.Column="1"/>
-    	<CheckBox x:Name="CkbAds" Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="9" Grid.Column="1"/>
+    	<TextBlock x:Name="TbLogin" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Your nickname:" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="0,13,0,11" FontSize="14.667" Height="18" Width="98"/>
+    	<TextBlock x:Name="TbPassword" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Your password:" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Margin="0,13,0,11" FontSize="14.667"/>
+    	<TextBlock x:Name="TbPasswordRepeat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Repeat your password:" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Margin="0,12,0,11" FontSize="14.667"/>
+    	<AppBarButton x:Name="BtnBack" HorizontalAlignment="Right" Icon="Back" Label="" VerticalAlignment="Bottom" Grid.Row="13" Grid.Column="3" Tapped="BtnBack_Tapped" Margin="0" FontSize="14.667"/>
+    	<Button x:Name="BtnRegister" Content="Register" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="13" Grid.Column="2" Tapped="BtnRegister_Tapped" Margin="0" FontSize="14.667"/>
+    	<CheckBox x:Name="CkbTerms" Content="I agree with Terms of Use" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="9" Grid.Column="1" Margin="0,7" Grid.ColumnSpan="2" FontSize="14.667"/>
+    	<CheckBox x:Name="CkbAds" Content="I want to recieve interesting notifications" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="11" Grid.Column="1" Margin="0,8,0,7" Grid.ColumnSpan="2" FontSize="14.667"/>
+    	<TextBlock x:Name="TbYourEmail" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Your e-mail:" VerticalAlignment="Center" Grid.Row="7" Grid.Column="1" Margin="0,13,0,11" FontSize="14.667"/>
+    	<TextBox x:Name="TbLoginValue" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" FontSize="14.667" Margin="0,5"/>
+    	<TextBox x:Name="TbPasswordValue" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2" FontSize="14.667" Margin="0,5"/>
+    	<TextBox x:Name="TBPasswordRepeat" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Grid.Row="5" Grid.Column="2" FontSize="14.667" Margin="0,5,0,4"/>
+    	<TextBox x:Name="TbEmailValue" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Grid.Row="7" Grid.Column="2" FontSize="14.667" Margin="0,5"/>
 
     </Grid>
 </Page>
