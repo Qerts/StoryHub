@@ -104,6 +104,10 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <ProjectReference Include="..\..\SimpleLogger\SimpleLogger.csproj">
+      <Project>{527bf7d3-0c28-4188-97e9-8b789efbd187}</Project>
+      <Name>SimpleLogger</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ForgottenPsw.xaml.cs">
@@ -122,6 +126,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wall.xaml.cs">
+      <DependentUpon>Wall.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +157,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Register.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wall.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

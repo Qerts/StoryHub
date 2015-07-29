@@ -25,35 +25,13 @@ namespace StoryHub
         public MainPage()
         {
             this.InitializeComponent();
-            BtnAbout.Tapped += BtnAbout_Tapped;
-            BtnSettings.Tapped += BtnSettings_Tapped;
-            BtnStories.Tapped += BtnStories_Tapped;
-            BtsWantToWrite.Tapped += BtsWantToWrite_Tapped;
-        }
-
-        void BtsWantToWrite_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Wannabe));
-        }
-
-        void BtnStories_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Stories));
-        }
-
-        void BtnSettings_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Options));
-        }
-
-        void BtnAbout_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(About));
         }
 
         private void BtnLogin_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
-        	// TODO: Add event handler implementation here.
+            var loginResult = BLL.RoleKeeper.Login(TbLogin.Text, TbPsw.Password);
+            if(loginResult.Item1)
+            Frame.Navigate(typeof(Wall));
         }
 
         private void BtnRegister_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)

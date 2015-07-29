@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Windows.Data.Xml.Dom;
 using Windows.UI.Xaml.Controls;
 
-namespace StoryHub.Model
+namespace StoryHub.DAL.Model
 {
-    class Story
+    public class Story
     {
-        private string title = string.Empty;
+        private string title = string.Empty;                              //vytvoření proměnných
 
         public string Title
         {
             get { return title; }
             set { title = value; }
         }
-
         private string subtitle = string.Empty;
 
         public string Subtitle
@@ -22,63 +22,27 @@ namespace StoryHub.Model
             get { return subtitle; }
             set { subtitle = value; }
         }
-
         private List<Author> author = new List<Author>();
 
-        public List<Author> Author
+        internal List<Author> Author
         {
             get { return author; }
             set { author = value; }
         }
+        private bool isNew = true;
 
-        private List<Article> articles = new List<Article>();
-
-        internal List<Article> Articles
+        public bool IsNew
         {
-            get { return articles; }
-            set { articles = value; }
+            get { return isNew; }
+            set { isNew = value; }
         }
+        private Image image = new Image();
 
-        private bool hasNew = true;
-
-        public bool HasNew
+        public Image Image
         {
-            get { return hasNew; }
-            set { hasNew = value; }
+            get { return image; }
+            set { image = value; }
         }
-
-        private List<Genre> genres = new List<Genre>();
-
-        public List<Genre> Genres
-        {
-            get { return genres; }
-            set { genres = value; }
-        }
-
-        private DateTime lastChange = new DateTime();
-
-        public DateTime LastChange
-        {
-            get { return lastChange; }
-            set { lastChange = value; }
-        }
-
-        private string abstrakt = string.Empty;
-
-        public string Abstrakt
-        {
-            get { return abstrakt; }
-            set { abstrakt = value; }
-        }
-
-        private Image mainImage = new Image();
-
-        public Image MainImage
-        {
-            get { return mainImage; }
-            set { mainImage = value; }
-        }
-
         private int rating = 0;
 
         public int Rating
@@ -86,15 +50,6 @@ namespace StoryHub.Model
             get { return rating; }
             set { rating = value; }
         }
-
-        private List<Restriction> restriction = new List<Restriction>();
-
-        internal List<Restriction> Restriction
-        {
-            get { return restriction; }
-            set { restriction = value; }
-        }
-
         private DateTime added = new DateTime();
 
         public DateTime Added
@@ -102,7 +57,12 @@ namespace StoryHub.Model
             get { return added; }
             set { added = value; }
         }
+        private XmlDocument body = new XmlDocument();
 
-
+        public XmlDocument Body
+        {
+            get { return body; }
+            set { body = value; }
+        }
     }
 }

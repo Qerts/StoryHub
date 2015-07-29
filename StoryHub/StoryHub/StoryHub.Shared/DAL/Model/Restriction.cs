@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StoryHub.Model
+namespace StoryHub.DAL.Model
 {
     class Restriction
     {

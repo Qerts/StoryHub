@@ -20,7 +20,7 @@ namespace StoryHub.DAL
             try
             {
                 HttpClient client = new HttpClient();
-                client.GetAsync(URI, HttpCompletionOption.ResponseContentRead, )
+                
             }
             catch (Exception)
             {

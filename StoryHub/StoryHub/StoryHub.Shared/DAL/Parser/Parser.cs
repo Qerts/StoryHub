@@ -6,7 +6,7 @@ namespace StoryHub.DAL.Parser
 {
     interface Parser
     {
-        public void Push();
-        public void Pull();
+        void Push();
+        void Pull();
     }
 }

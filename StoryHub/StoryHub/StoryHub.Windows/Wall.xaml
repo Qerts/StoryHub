@@ -1,0 +1,174 @@
+﻿<Page
+    x:Class="StoryHub.Wall"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StoryHub"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+	<Page.Resources>
+		
+		
+		
+	</Page.Resources>
+
+    <Grid HorizontalAlignment="Left" Height="768" VerticalAlignment="Top" Width="1366">
+
+		<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="4*"/>
+				<ColumnDefinition Width="4*"/>
+				<ColumnDefinition Width="8*"/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<Grid x:Name="StorylinesGrid" Margin="0">
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition Height="2*"/>
+					<RowDefinition Height="33*"/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="12*"/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Viewbox Grid.Row="1" Grid.Column="1">
+					<TextBlock Margin="0" TextWrapping="Wrap" Text="Storylines" VerticalAlignment="Top" Width="80"/>
+				</Viewbox>
+				<ListBox x:Name="StorylinesListBox" ItemsSource="{Binding Storylines}" Grid.Column="1" Margin="0" Grid.Row="2" Background="{x:Null}" Foreground="White" FontSize="24" BorderBrush="#FF060000" Style="{StaticResource ListBoxCustomedStyle}" ItemContainerStyle="{StaticResource ListBoxItemCustomStyle}" SelectionChanged="StorylinesListBox_SelectionChanged" ItemTemplate="{StaticResource StorylinesItemTemplate}"/>
+			</Grid>
+			<Grid x:Name="StoriesGrid" Grid.Column="1" Margin="0" Visibility="Collapsed" d:IsHidden="True">
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition Height="2*"/>
+					<RowDefinition Height="33*"/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="12*"/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1">
+					<TextBlock TextWrapping="Wrap" Text="Stories" Width="80"/>
+				</Viewbox>
+				<ListBox x:Name="StoriesListBox" Background="{x:Null}" Foreground="White" Grid.Row="2" Grid.Column="1" FontSize="24" ItemContainerStyle="{StaticResource ListBoxItemCustomStyle}" Style="{StaticResource ListBoxCustomedStyle}" SelectionChanged="StoriesListBox_SelectionChanged">
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+				</ListBox>
+			</Grid>
+			<Grid x:Name="StoryGrid" Margin="0" d:IsHidden="True">
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition Height="2*"/>
+					<RowDefinition Height="20*"/>
+					<RowDefinition Height="13*"/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="12*"/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Viewbox Grid.Row="1" Grid.Column="1">
+					<TextBlock Margin="0" TextWrapping="Wrap" Text="Storylines" VerticalAlignment="Top" Width="80"/>
+				</Viewbox>
+				<Viewbox Grid.Column="1" Margin="0" Grid.Row="2"/>
+				<Grid Grid.Column="1" Margin="0" Grid.Row="3">
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<Button x:Name="BtnBack" Content="Button" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Grid.RowSpan="4" Grid.ColumnSpan="5" Grid.Column="1" Tapped="BtnBack_Tapped"/>
+				</Grid>
+			</Grid>
+			<Grid x:Name="StorylineGrid" Margin="0" d:IsHidden="True">
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition Height="2*"/>
+					<RowDefinition Height="33*"/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition Width="12*"/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Viewbox Grid.Row="1" Grid.Column="1">
+					<TextBlock Margin="0" TextWrapping="Wrap" Text="Storylines" VerticalAlignment="Top" Width="80"/>
+				</Viewbox>
+				<ListBox Grid.Column="1" Margin="0" Grid.Row="2" Background="{x:Null}" Foreground="White" FontSize="24" BorderBrush="#FF060000" Style="{StaticResource ListBoxCustomedStyle}" ItemContainerStyle="{StaticResource ListBoxItemCustomStyle}" >
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+					<ListBoxItem Content="ListBoxItem"/>
+				</ListBox>
+			</Grid>
+		</Grid>
+	</Grid>
+</Page>

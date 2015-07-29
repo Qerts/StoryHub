@@ -1,4 +1,4 @@
-﻿using StoryHub.Model;
+﻿using StoryHub.DAL.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
