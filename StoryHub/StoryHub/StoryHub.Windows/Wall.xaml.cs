@@ -47,6 +47,7 @@ namespace StoryHub
         {
             //StorylinesListBox.ItemsSource = BLL.RoleKeeper.LoggedUser.Storylines;
             StorylinesListBox.DataContext = BLL.RoleKeeper.LoggedUser;
+            StorylinesListBox.SelectedIndex = -1;
 
             StorylinesGrid.Visibility = Visibility.Visible;
             StorylineGrid.Visibility = Visibility.Collapsed;
@@ -56,15 +57,21 @@ namespace StoryHub
         /// <summary>
         /// This method will show detail of selected storyline.
         /// </summary>
-        private void ShowStoryline() 
+        private void ShowStoryline(Storyline storyline) 
         {
+            StoriesListBox.DataContext = storyline.Stories;
+            StorylineGrid.DataContext = storyline;
+            
+
             StorylinesGrid.Visibility = Visibility.Collapsed;
             StorylineGrid.Visibility = Visibility.Visible;
             StoryGrid.Visibility = Visibility.Collapsed;
             StoriesGrid.Visibility = Visibility.Visible;
         }
-        private void ShowStory() 
+        private void ShowStory(Story story) 
         {
+            StoryGrid.DataContext = story;
+
             StorylinesGrid.Visibility = Visibility.Collapsed;
             StorylineGrid.Visibility = Visibility.Collapsed;
             StoryGrid.Visibility = Visibility.Visible;
@@ -81,12 +88,22 @@ namespace StoryHub
 
         private void StorylinesListBox_SelectionChanged(object sender, Windows.UI.Xaml.Controls.SelectionChangedEventArgs e)
         {
-            ShowStoryline();
+            ShowStoryline(StorylinesListBox.SelectedItem as Storyline);
         }
 
         private void StoriesListBox_SelectionChanged(object sender, Windows.UI.Xaml.Controls.SelectionChangedEventArgs e)
         {
-            ShowStory();
+            ShowStory(StoriesListBox.SelectedItem as Story);
+        }
+
+        private void AppBarButton_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            ShowStorylines();
+        }
+
+        private void AppBarButton_Tapped_1(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            ShowStoryline(StorylineGrid.DataContext as Storyline);
         }
     }
 }

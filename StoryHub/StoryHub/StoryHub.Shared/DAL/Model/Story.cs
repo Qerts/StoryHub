@@ -22,9 +22,9 @@ namespace StoryHub.DAL.Model
             get { return subtitle; }
             set { subtitle = value; }
         }
-        private List<Author> author = new List<Author>();
+        private Author author = new Author();
 
-        internal List<Author> Author
+        internal Author Author
         {
             get { return author; }
             set { author = value; }

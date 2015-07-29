@@ -201,10 +201,19 @@
 				</Viewbox>
 			</Grid>
 		</DataTemplate>
-		
-		
-		
-		
-	</Application.Resources>
+        <DataTemplate x:Key="StoriesItemTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap"  Text="{Binding Title}" VerticalAlignment="Center" FontSize="14.667"/>
+            </Grid>
+        </DataTemplate>
+
+
+
+
+    </Application.Resources>
 
 </Application>

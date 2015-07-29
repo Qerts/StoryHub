@@ -103,7 +103,10 @@ namespace StoryHub.DAL.Model
             set { authorGenres = value; }
         }
 
-
+        public override string ToString()
+        {
+            return pseudonyme;
+        }
 
 
 

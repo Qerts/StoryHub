@@ -44,36 +44,44 @@ namespace StoryHub.DAL.Model
             Stories = new List<string>() { "Warmoger" },
             Surename = "Bludburry"
         };
+
+        //stories
+        private static Story st1 = new Story() { Title = "About author", Subtitle = "Modofokin dude", Added = DateTime.Now, Rating = 4, Author = Author_Garendel, };
+
         //storylines
         public static Storyline Storyline_HanselAndGretel = new Storyline()
         {
             Abstrakt = "bla",
             Added = DateTime.Now,
-            Author = new List<Author>() { Author_Cendric },
+            Author = Author_Cendric,
             Genres = new List<Genre>() { Genre.fantasy },
             HasNew = true,
             LastChange = DateTime.Now,
             Rating = 5,
+            Restriction = new List<Restriction>() { new Restriction() { Name = "Gore", Description = "Lot of blood and intestines" } },
             Stories = new List<Story>() 
-            {
+            {  st1,
                 new Story()
                 {
                     Added = DateTime.Now,
-                    Author = new List<Author>(){Author_Garendel},
+                    Author = Author_Garendel,
+                    Title = "Prologue",
+
                     
                     
                 }, 
                 new Story()
                 {
-                    
+                    Title = "Chapter I",
                 }, 
                 new Story()
                 {
-                
+                    Title = "Chapter II",
                 }
             },
             Subtitle = "The old story",
-            Title = "Hansel and Gretel"
+            Title = "Hansel and Gretel",
+            
         };
         public static Storyline Storyline_DawnOfDragons = new Storyline();
         public static Storyline Storyline_Warmonger = new Storyline();
