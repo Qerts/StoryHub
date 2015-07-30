@@ -57,9 +57,9 @@ namespace StoryHub.DAL.Model
             get { return added; }
             set { added = value; }
         }
-        private XmlDocument body = new XmlDocument();
+        private string body = string.Empty;
 
-        public XmlDocument Body
+        public string Body
         {
             get { return body; }
             set { body = value; }

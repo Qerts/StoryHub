@@ -53,20 +53,26 @@ namespace StoryHub
             StorylineGrid.Visibility = Visibility.Collapsed;
             StoryGrid.Visibility = Visibility.Collapsed;
             StoriesGrid.Visibility = Visibility.Collapsed;
+            WallGrid.Visibility = Visibility.Collapsed;
         }
         /// <summary>
         /// This method will show detail of selected storyline.
         /// </summary>
         private void ShowStoryline(Storyline storyline) 
         {
-            StoriesListBox.DataContext = storyline.Stories;
-            StorylineGrid.DataContext = storyline;
+            if (storyline != null)
+            {
+                StoriesListBox.DataContext = storyline.Stories;
+                StorylineGrid.DataContext = storyline;
+            }
+            
             
 
             StorylinesGrid.Visibility = Visibility.Collapsed;
             StorylineGrid.Visibility = Visibility.Visible;
             StoryGrid.Visibility = Visibility.Collapsed;
             StoriesGrid.Visibility = Visibility.Visible;
+            WallGrid.Visibility = Visibility.Collapsed;
         }
         private void ShowStory(Story story) 
         {
@@ -76,6 +82,7 @@ namespace StoryHub
             StorylineGrid.Visibility = Visibility.Collapsed;
             StoryGrid.Visibility = Visibility.Visible;
             StoriesGrid.Visibility = Visibility.Collapsed;
+            WallGrid.Visibility = Visibility.Visible;
         }
         #endregion 
 

@@ -46,7 +46,7 @@ namespace StoryHub.DAL.Model
         };
 
         //stories
-        private static Story st1 = new Story() { Title = "About author", Subtitle = "Modofokin dude", Added = DateTime.Now, Rating = 4, Author = Author_Garendel, };
+        private static Story st1 = new Story() { Title = "About author", Subtitle = "Modofokin dude", Added = DateTime.Now, Rating = 4, Author = Author_Garendel, Body = "This is the new shit." };
 
         //storylines
         public static Storyline Storyline_HanselAndGretel = new Storyline()
