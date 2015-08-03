@@ -25,6 +25,8 @@ namespace StoryHub
         public MainPage()
         {
             this.InitializeComponent();
+            SimpleLogger.Logger.vypis("Bla bla bla");
+            
         }
 
         private void BtnLogin_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
