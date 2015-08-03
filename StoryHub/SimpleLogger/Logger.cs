@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace SimpleLogger
 {
-    class Logger
+   public static class Logger
     {
+       private static string foramtInput(string input) 
+       {
+           string save = string.Empty;
+           save=input
+       }
+
         //je nutno implementovat tyto metody:
         //public void Input(string input) - metoda pro přijetí stringu 
         //private string foramtInput(string input) - metoda pro zformátování stringu
